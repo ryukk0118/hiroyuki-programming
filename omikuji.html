@@ -1,0 +1,22 @@
+<p id="para1" style="background:cyan">
+Omikuji!
+</p>
+<button id="btn1">Click Me!</button>
+
+<script>
+btn1.onclick =()=> {
+  let x = Math.random();
+  x = x * 6 + 1;
+  x = Math.floor(x);
+  if(x == 6) {
+    para1.textContent =  "daikichi";
+    para1.style = "background:yellow";
+  } else if(x == 1){
+    para1.textContent =  "kyo";
+    para1.style = "background:violet";
+  } else {
+    para1.textContent =  "kichi";
+    para1.style = "background:lightgreen";
+  } 
+}
+</script>
